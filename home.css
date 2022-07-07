@@ -1,0 +1,17 @@
+body {
+    background-image: linear-gradient(rgb(251, 173, 128),#ff000000);
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    width: 100px;
+    height: 80px;
+    margin-top: 0.3cm;
+    margin-left: 0.5cm;
+}
+.Nav {
+    text-emphasis-color: white;
+    /* text-decoration: underline; */
+    font-size: 25px;
+    align-content: flex-end;
+    color: white;
+}
