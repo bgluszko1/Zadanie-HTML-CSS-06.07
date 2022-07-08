@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
     background-image: linear-gradient(rgb(251, 173, 128),#ff000000);
     font-family: 'Open Sans', sans-serif;
@@ -13,11 +14,12 @@ header {
     padding: 0px 20px;
 }
 
-li, a {
+li, a{
     text-emphasis-color: white;
     font-size: 20px;
-    color: white;
+    color: rgb(241, 236, 236);
     text-decoration: none;
+    transition: color 0.3s;
 }
 .nav_links {
     list-style: none;
@@ -26,11 +28,46 @@ li, a {
     display: inline-block;
     padding: 0px 30px;
 }
-a:active:after {
+a:active {
     text-decoration: underline;
 }
 a:hover {
     font-weight: bold;
+    color: white;
+}
+input {
+    border: none;
+    padding: 8px 15px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px gray;
+}
+::placeholder {
+    color: gray;
+    text-align: left;
+}
+button {
+    margin-left: 9px;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: rgb(251, 171, 126);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px gray;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 1;
 }
 footer {
     display: flex;
@@ -45,6 +82,9 @@ footer {
     color: gray;
     font-size: 20px;
 }
+footer p {
+    padding-bottom: 10px;
+}
 .logos {
     list-style: none;
     color: black;
@@ -52,10 +92,12 @@ footer {
     align-content: flex-end;
     font-size: 60px;
     margin-right: 200px;
+    transition: none;
 }
 .logos li {
     width: 30px;
     align-content: flex-end;
     display: inline-block;
     padding-right: 45px;
+    color: black;
 }
