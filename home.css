@@ -3,15 +3,39 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 img {
-    width: 100px;
+    width: 130px;
     height: 80px;
     margin-top: 0.3cm;
     margin-left: 0.5cm;
 }
-.Nav {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+li, a {
     text-emphasis-color: white;
-    /* text-decoration: underline; */
-    font-size: 25px;
-    align-content: flex-end;
+    font-size: 20px;
     color: white;
+    text-decoration: none;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+a:active {
+    text-decoration: underline;
+}
+a:hover {
+    font-weight: bold;
 }
