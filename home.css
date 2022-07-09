@@ -19,21 +19,48 @@ li, a{
     font-size: 20px;
     color: rgb(241, 236, 236);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 .nav_links {
     list-style: none;
+    text-emphasis-color: white;
+    font-size: 20px;
+    color: rgb(241, 236, 236);
+    text-decoration: none;
+    transition: 0.3s;
 }
 .nav_links li {
     display: inline-block;
     padding: 0px 30px;
 }
-a:active {
+
+.active {
     text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
 }
 a:hover {
     font-weight: bold;
     color: white;
+}
+a:hover.logos {
+    color:black;
+    transition: none;
+}
+p {
+    color: rgb(32, 30, 30);
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p2 {
+    font-weight: 600;
+    font-size: 19px;
+}
+div.search {
+    margin-left: 80px;
+    margin-top: 50px;
 }
 input {
     border: none;
@@ -51,6 +78,7 @@ input {
     text-align: left;
 }
 button {
+    margin-top: 25px;
     margin-left: 9px;
     border: none;
     color: white;
@@ -68,6 +96,16 @@ button {
 }
 button:hover {
     opacity: 1;
+}
+img.right {
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+    margin-right: 100px;
+    mix-blend-mode: multiply;
+    float: right;
+    width: auto;
+    height: 250px;
 }
 footer {
     display: flex;
@@ -92,7 +130,6 @@ footer p {
     align-content: flex-end;
     font-size: 60px;
     margin-right: 200px;
-    transition: none;
 }
 .logos li {
     width: 30px;
