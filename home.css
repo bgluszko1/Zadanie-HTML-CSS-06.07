@@ -107,6 +107,40 @@ img.right {
     width: auto;
     height: 250px;
 }
+.row {
+    justify-content: space-between;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+.column {
+    margin-left: 10%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+.column img {
+    background-color: white;
+    background-size: 500px;
+    border-radius: 5%;
+    margin-top: 15%;
+    vertical-align: middle;
+    width: auto;
+    height: 200px;
+}
+  
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+.caption {
+    display: block;
+    margin-left: 30%;
+    text-align: center;
+}
 footer {
     display: flex;
     justify-content: space-between;
