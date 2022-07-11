@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
-    background-image: linear-gradient(rgb(251, 173, 128),#ff000000);
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100vw;
+    margin: 0;
+}
+.costam {
+    background-image: linear-gradient(rgb(251, 173, 128),#ff000000);
 }
 img {
-    width: 130px;
-    height: 80px;
+    width: 8%;
+    height: 5%;
 }
 header {
     display: flex;
@@ -111,7 +114,6 @@ img.right {
     bottom: 200px;
     right: 100px;
     margin-right: 100px;
-    mix-blend-mode: multiply;
     float: right;
     width: auto;
     height: 250px;
@@ -121,33 +123,33 @@ img.right {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    padding-bottom: 10%;
   }
 .column {
-    margin-left: 10%;
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
-  }
-.column img {
+}
+.caption span{
+    margin-left: 3%;
+}
+.column input {
     border:rgb(32, 30, 30);
     background-color: white;
-    background-size: 500px;
+    background-size: contain;
+    border-style: solid;
+    border: 1px gray solid ;
     border-radius: 5%;
+    box-shadow: 0px 0px 5px gray;
     margin-top: 15%;
-    width: 100%;
-    height: auto;
-}
-  
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
+    width: 110%;
+    height: 35%;
 }
 .caption {
+    position: relative;
     display: block;
     margin-left: 30%;
     text-align: center;
+    padding-right: 10%;
 }
 .trending {
     background-color: rgb(251, 171, 126);
@@ -170,18 +172,25 @@ img.right {
     padding: 5%;
     padding-bottom: 5px;
     padding-top: 0;
-    padding-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
     width: 100%;
 }
 .trending-images img {
-    height: auto;
-    width: 300px;
+    height: 80%;
+    width: 80%;
     margin-bottom: 30px;
     border-radius: 20px;
 }
 .trending-images a:hover {
     filter: brightness(60%)
 }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 footer {
     display: flex;
     justify-content: space-between;
