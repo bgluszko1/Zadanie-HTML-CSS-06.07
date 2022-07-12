@@ -112,11 +112,12 @@ button:hover {
 img.right {
     position: relative;
     padding-bottom: 0%;
-    bottom: 330px;
+    bottom: 40vh;
     right: 50px;
     float: right;
     width: 30%;
     height: auto;
+    padding-top: 8%;
 }
 .breakfast {
     position: relative;
@@ -138,6 +139,83 @@ img.breakfast-image {
     object-fit: cover;
     height: 50%;
 }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+tr, td {
+    width: 90vw;
+}
+div.table {
+    width: 35%;
+    margin-left: 10%;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px 0px gray;
+    border: 0.2px solid black;
+    border-radius: 5%;
+}
+.table td {
+    border-bottom: 0.2px solid black;
+    border-radius: 5%;
+    text-align: center;
+    padding: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+div.table tr:last-child {
+    border: none-bottom;
+}
+.recipe{
+    /* padding-right: 10%; */
+    width: 50vh;
+    display: flex;
+    flex-direction: column
+}
+.recipe h {
+    color: orange;
+    align-self: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10%;
+}
+.recipe img {
+    border-radius: 5%;
+    width: 100%;
+    height: 40%;
+    clip-path: inset(100px,0,0,0);
+}
+.under-picture {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ion-icon {
+    color:rgb(251, 171, 126);
+    font-size: 40px;
+}
+.section1 {
+    padding-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.section2 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 15%;
+}
+.section1 p {
+    font-weight: 500;
+}
+.section2 p {
+    font-weight: 500;
+}
+div.table td:hover {
+    border-radius: 5%;
+    background-color: rgb(254, 238, 229);
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -151,25 +229,6 @@ footer {
     color: gray;
     font-size: 20px;
     margin-top: auto;
-}
-table {
-    width: 30%;
-    margin-left: 5%;
-    border-collapse: collapse;
-    box-shadow: 0px 0px 10px 0px gray;
-    border-radius: 5%;
-    border: 0.2px solid black;
-}
-.table td {
-    border-bottom: 0.2px solid black;
-    text-align: center;
-    padding: 5%;
-    font-weight: bold;
-    font-size: 20px;
-}
-.table td:hover {
-    border-radius: 5%;
-    background-color: rgb(254, 238, 229);
 }
 footer p {
     padding-bottom: 10px;

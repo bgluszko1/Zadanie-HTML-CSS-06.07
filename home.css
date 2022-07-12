@@ -169,8 +169,7 @@ img.right {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    padding: 5%;
-    padding-bottom: 5px;
+    padding-bottom: 1%;
     padding-top: 0;
     padding-left: 3%;
     padding-right: 3%;
@@ -179,18 +178,11 @@ img.right {
 .trending-images img {
     height: 80%;
     width: 80%;
-    margin-bottom: 30px;
     border-radius: 20px;
 }
 .trending-images a:hover {
     filter: brightness(60%)
 }
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 footer {
     display: flex;
     justify-content: space-between;
