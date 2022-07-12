@@ -161,7 +161,6 @@ table {
     border: 0.2px solid black;
 }
 .table td {
-    border-radius: 5%;
     border-bottom: 0.2px solid black;
     text-align: center;
     padding: 5%;
