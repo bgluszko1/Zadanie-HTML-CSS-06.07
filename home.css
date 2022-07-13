@@ -112,8 +112,7 @@ button:hover {
 img.right {
     position: relative;
     bottom: 200px;
-    right: 100px;
-    margin-right: 100px;
+    margin-right: 10%;
     float: right;
     width: auto;
     height: 250px;
@@ -183,6 +182,14 @@ img.right {
 .trending-images a:hover {
     filter: brightness(60%)
 }
+.trending-images a:hover + .centered {
+    color: white;
+    opacity: 1;
+}
+.centered p2 {
+    font-weight: 500;
+    font-size: 30px;
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -199,6 +206,18 @@ footer {
 }
 footer p {
     padding-bottom: 10px;
+}
+.end {
+    position: relative;
+}
+.centered {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
 .logos {
     list-style: none;
